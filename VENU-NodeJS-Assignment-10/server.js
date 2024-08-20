@@ -62,7 +62,7 @@ app.get('/admin/dashboard', (req, res) => {
 app.get('/admin/dashboard/book-:id', (req, res) => {
     res.render('details');
 });
-mongoose.connect('mongodb+srv://regulavenu985:DUxs1iFEpFujeip5@booksApp.2k7tw.mongodb.net/?retryWrites=true&w=majority&appName=usersCluster')
+mongoose.connect('mongodb+srv://regulavenu985:Venu7997@booksApp.2k7tw.mongodb.net/?retryWrites=true&w=majority&appName=usersCluster')
     .then(() => console.log('Connected to MongoDB Atlas'))
     .catch(err => console.error('Could not connect to MongoDB Atlas:', err));
 
