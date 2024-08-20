@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(12, 192, 12);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.inputfield {
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    background-color: rgba(231, 225, 225, 0.566);
+}
+
+.inputfield:focus {
+    border: 2px solid rgb(12, 192, 12);
+    background-color: rgba(78, 92, 97, 0.03);
+    outline: none;
+}
+
+#header {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 2px;
+}
+
+#headline {
+    margin-top: 1px;
+    color: rgb(163, 159, 159);
+    font-size: 17px;
+}
+
+#singupButton {
+    background-color: rgb(12, 192, 12);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#checkboxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#checkbox{
+    width: 18px;
+    height:18px;
+}
+#checkboxlabel {
+    font-size: 18px;
+    color: rgb(163, 159, 159);
+}
+
+#loginText {
+    color: #fff;
+    font-size: 18px;
+}

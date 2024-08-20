@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserSignUp</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <form id="myForm">
+        <div id="signupContainer">
+            <p id="header">Sign Up</p>
+            <p id="headline">Please fill the form to create account</p>
+            <input type="text" class="inputfield" id="name" name="name" placeholder="Your name" required>
+            <input type="text" class="inputfield" id="email" name="email" placeholder="Your email" required>
+            <input type="text" class="inputfield" id="password" name="password" placeholder="password" required>
+            <input type="text" class="inputfield" id="repassword" name="repassword" placeholder="conform password" required>
+            <div id="checkboxContainer">
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox" id="checkboxlabel">I accept the <span style="color: rgb(12, 192, 12);">Terms of Use</span> & <span style="color: rgb(12, 192, 12);">Privacy Policy</span></label>
+            </div>
+            <button type="submit" id="singupButton">sign up</button>
+        </div>
+    </form>
+    <div id="alreadyAccount">
+        <p id="loginText">Already have an account? <a href="/login" id="loginLink" style="color: #fff;">Login here</a></p>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

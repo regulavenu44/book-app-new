@@ -1,0 +1,318 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+    border-right: 3px solid rgba(180, 184, 184, 0.909);
+}
+#container2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    height: 80vh;
+}
+#bookImage{
+    width: 60%;
+    height: 90%;
+}
+#nameContainer{
+    border-bottom: 2px solid rgba(180, 184, 184, 0.909);
+    padding-bottom: 1px;
+}
+#bookName{
+    font-weight: bold;
+    font-size: 30px;
+}
+#addedby{
+    color: blue;
+    font-size: 16px;
+}
+.starImage{
+    width: 100%;
+    height: 100%;
+}
+.starContainer{
+    display: flex;
+    flex-direction: row;
+}
+.star{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+.halfStar{
+    width: 7.5px;
+    height: 15px;
+}
+#bookPriceTag{
+    font-weight: bold;
+}
+#bookPrice{
+    font-weight: bold;
+    font-size: 30px;
+    color: blue;
+}
+#highlightText{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(180, 184, 184, 0.909);
+    border-bottom-style: dashed;
+    padding-bottom: 10px;
+}
+#highlightsContainer{
+    display: flex;
+    flex-direction: column;
+}
+#listContainer{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+ul{
+    font-size: 18px;
+}
+li{
+    margin-bottom: 20px;
+}
+#cartButton{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#editButton {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 50px; 
+    top: 140px;
+    transition: transform 0.3s ease-in;
+}
+
+#editButton:hover {
+    transform:scale(1.2);
+}
+#deleteButton{
+    width: 45px;
+    height: 45px;
+    position:absolute;
+    right: 110px;
+    top: 140px;
+    transition: transform 0.3s ease-in;
+}
+#deleteButton:hover{
+    transform:scale(1.2);
+}
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+#modalContent {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+#close:hover{
+    color: black;
+    transform:scale(1.4);
+}
+#updateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.inputField {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e2dbdb9f;
+    transition: transform 0.3s ease-in;
+}
+.inputField:hover{
+    background-color: #fff;
+    border: 2px solid green;
+    outline: none;
+    transform: scale(1.05);
+}
+#updateButton {
+    background-color:green;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+#updateButton:hover {
+    transform: scale(1.2);
+}
+#appTitle{
+    color: #fff;
+    text-align: center;
+    
+}
+#titleContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    padding-left: 20px;
+    background-color: green;
+    border-radius: 8px;
+}
+#titleContainer:hover{
+    cursor: pointer;
+}
+#bookIcon{
+    width: 50px;
+    height: 50px;
+}
+#actionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    padding-right: 20px;
+    background-color: green;
+    border-radius: 8px;
+    
+}
+#actionContainer:hover{
+    cursor: pointer;
+}
+#userIcon{
+    width: 40px;
+    height: 40px;
+}
+#header{
+    z-index: 2;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    margin: 15px;
+}
+#userName{
+    color: #fff;
+    font-size: 20px;
+}
+
+#sessionModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+#sessionModalContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+#errorMessage{
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+#gotoLogin{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin: 20px;
+}
+#modalClose{
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: auto;
+    color: gray;
+    padding-left: 90%;
+    transition: width 0.3s ease-in ,height 0.3s ease-in;
+}
+#modalClose:hover{
+    color: black;
+    cursor: pointer;
+}

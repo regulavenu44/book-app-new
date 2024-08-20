@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLogin</title>
+    <link rel="stylesheet" href="/css/adminSignup.css">
+</head>
+
+<body>
+    <form id="adminForm">
+        <div id="signupContainer">
+            <p id="signupHeader">admin singup</p>
+            <p id="signupHeadline">Please enter your credentials</p>
+            <input type="text" class="inputfield" id="adminName" name="name" placeholder="Your name" required>
+            <input type="text" class="inputfield" id="adminEmail" name="email" placeholder="Your email" required>
+            <input type="text" class="inputfield" id="adminPassword" name="password" placeholder="password" required>
+            <input type="text" class="inputfield" id="adminRepassword" name="repassword" placeholder="conform password" required>
+            <div id="checkboxContainer">
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox" id="checkboxLabel">I accept the <span style="color: rgba(24, 170, 223, 0.847);">Terms of Use</span> & <span style="color: rgba(24, 170, 223, 0.847);">Privacy Policy</span></label>
+            </div>
+            <button type="submit" id="adminSignupButton">Signup</button>
+        </div>
+    </form>
+    <script src="/js/adminSignup.js"></script>
+</body>
+
+</html>

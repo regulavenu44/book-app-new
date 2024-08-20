@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="titleContainer">
+            <img id="bookIcon" src="/image/book.png" alt="bookIcon">
+            <h2 id="appTitle">Books Management App</h2>
+        </div>
+        <div id="menu">
+            <a id="homeLink" class="links active" href="#home">Home</a>
+            <a id="usersLink" class="links" href="#users">Users</a>
+            <a id="requestsLink" class="links" href="#requests">Requests</a>
+        </div>
+        <div id="actionContainer">
+            <p id="userName">Hello!</p>
+            <img id="userIcon" src="/image/user.png" alt="userIcon">
+        </div>
+    </div>
+    <div id="sessionModal">
+        <div id="sessionModalContent">
+            <span id="modalClose">&times;</span>
+            <p id="errorMessage">Error</p>
+            <button id="gotoLogin">Go to Login</button>
+        </div>
+    </div>
+    <div id="mainContainer">
+        <div id="home">
+            <form id="myForm">
+                <div id="container1">
+            <div id="inputsContainer">
+                <input type="text" id="title" class="inputField" placeholder="Title" required>
+                <input type="text" id="author" class="inputField" placeholder="Author" required>
+                <input type="text" id="genre" class="inputField" placeholder="Genre" required>
+                <input type="number" id="pub_year" class="inputField" placeholder="Publication Year" required>
+                <input type="text" id="language" class="inputField" placeholder="Language" required>
+                <input type="number" id="price" class="inputField" placeholder="Price" step="0.01" required>
+                <input type="text" id="publisher" class="inputField" placeholder="Publisher" required>
+                <input type="text" id="isbn" class="inputField" placeholder="isbn" required>
+                <input type="number" id="rating" class="inputField" placeholder="Rating(5)" step="0.5" required>
+                <input type="text" id="url" class="inputField" placeholder="url for book" required> 
+            </div>
+            <div id="ButtonContainer">
+                <button type="submit" id="addNewBook">Add Book</button>
+            </div>
+        </div>
+        </form>
+            <div id="cardContainer">
+            </div>
+            <div id="totalCountContainer">
+                <h3>overview</h3>
+                <div id="booksAvailable overview">
+                    <p class="headname" style="font-size: 20px; color: white;">Available Books</p>
+                    <p class="headvalue" id="availableCount" style="font-size: 50px; color: white; font-weight: bold;">
+                        100</p>
+                </div>
+                <div id="totalCopies overview">
+                    <p class="headname" style="font-size: 20px; color: white;">Total Copies</p>
+                    <p class="headvalue" id="copiesCount" style="font-size: 50px; color: white;font-weight: bold;">100
+                    </p>
+                </div>
+                <div id="booksValue overview">
+                    <p class="headname" style="font-size: 20px; color: white;">Books Value</p>
+                    <p class="headvalue" id="valueCount" style="font-size: 50px; color: white;font-weight: bold;">$100
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="modal">
+            <div id="modalContent">
+                <form id="updateForm">
+                    <span id="close">&times;</span>
+                    <label for="id" class="inputLabel">ID</label>
+                    <input type="text" id="id" class="inputField" placeholder="ID" readonly>
+                    <label for="name" class="inputLabel">Name</label>
+                    <input type="text" id="name" class="inputField" placeholder="name" required>
+                    <label for="email" class="inputLabel">Email</label>
+                    <input type="text" id="email" class="inputField" placeholder="Email" required>
+                    <label for="role" class="inputLabel">Role</label>
+                    <select name="role" id="role" class="inputField">
+                        <option value="admin">admin</option>
+                        <option value="user">user</option>
+                    </select>
+                    <label for="password" class="inputLabel">Password</label>
+                    <input type="text" id="password" class="inputField" placeholder="Password" required>
+                    <button type="submit" id="updateFormButton" class="inputField">Update Details</button>
+                </form>
+            </div>
+        </div>
+        <div id="users">
+            <div id="addUser">
+                <input type="text" class="inputfield" id="Addname" name="name" placeholder="Your name" required>
+                <input type="text" class="inputfield" id="Addemail" name="email" placeholder="Your email" required>
+                <select name="role" id="Addrole" class="inputfield">
+                    <option value="admin">admin</option>
+                    <option value="user">user</option>
+                </select>
+                <input type="text" class="inputfield" id="Addpassword" name="password" placeholder="password" required>
+                <button type="submit" id="addUserButton">Add User</button>
+            </div>
+            <div id="userTable">
+
+            </div>
+        </div>
+        <div id="requests">
+            <div id="requestTable">
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>

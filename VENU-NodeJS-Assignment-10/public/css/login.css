@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(12, 192, 12);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.inputfield {
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    height: 60px;
+    width: 500px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+    background-color: rgba(231, 225, 225, 0.566);
+}
+
+.inputfield:focus {
+    border: 2px solid rgb(12, 192, 12);
+    background-color: rgba(78, 92, 97, 0.03);
+    outline: none;
+}
+
+#loginheader {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 2px;
+}
+
+#loginheadline {
+    margin-top: 1px;
+    color: rgb(163, 159, 159);
+    font-size: 17px;
+}
+
+#loginButton {
+    background-color: rgb(12, 192, 12);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+#logincheckboxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#signupText {
+    color: #fff;
+    font-size: 18px;
+}
+#logincheckbox{
+    width: 18px;
+    height: 18px;
+}
+#logincheckboxlabel {
+    font-size: 18px;
+    color: rgb(163, 159, 159);
+}
+#adminLoginLink{
+    font-size: 18px;
+}

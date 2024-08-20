@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/details.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="titleContainer">
+            <img id="bookIcon" src="/image/book.png" alt="bookIcon">
+            <h2 id="appTitle">Books Management App</h>
+        </div>
+        <div id="actionContainer">
+            <p id="userName">Hello!</p>
+            <img id="userIcon"src="/image/user.png" alt="userIcon">
+        </div>
+    </div>
+    <div id="sessionModal">
+        <div id="sessionModalContent">
+            <span id="modalClose">&times;</span>
+            <p id="errorMessage">Error</p>
+            <button id="gotoLogin">Go to Login</button>
+        </div>
+    </div>
+    <div id="mainContainer">
+        <div id="container1">
+            <img id="bookImage" src="/image/sample.jpg" alt="BooK Image">
+        </div>
+        <div id="modal">
+            <div id="modalContent">
+                
+                <form id="updateForm">
+                    <span id="close">&times;</span>
+                    <div class="input-group">
+                        <label for="id">ID:</label>
+                        <input type="text" id="id" class="inputField" placeholder="ID" readonly>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" class="inputField" placeholder="Title" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" class="inputField" placeholder="Author" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="genre">Genre:</label>
+                        <input type="text" id="genre" class="inputField" placeholder="Genre" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="pub_year">Publication Year:</label>
+                        <input type="number" id="pub_year" class="inputField" placeholder="Publication Year" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="language">Language:</label>
+                        <input type="text" id="language" class="inputField" placeholder="Language" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" class="inputField" placeholder="Price" step="0.01" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="publisher">Publisher:</label>
+                        <input type="text" id="publisher" class="inputField" placeholder="Publisher" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="isbn">ISBN:</label>
+                        <input type="text" id="isbn" class="inputField" placeholder="ISBN" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="rating">Rating:</label>
+                        <input type="number" id="rating" class="inputField" placeholder="Rating (5)" step="0.5" required>
+                    </div>
+                
+                    <div class="input-group">
+                        <label for="url">URL:</label>
+                        <input type="text" id="url" class="inputField" placeholder="URL for Book" required>
+                    </div>
+                
+                    <button type="submit" id="updateButton" class="inputField">Update Details</button>
+                </form>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="nameContainer">
+                <img id="deleteButton" src="/image/bin.png" alt="Delete">
+                <img id="editButton" src="/image/pen.png" alt="Edit">
+                <p id="bookName">This is sample book</p>
+                <p style="font-size: 12px;">added by <span id="addedby"></span></p>
+            </div>
+            <div id="priceContainer">
+                <p id="bookPriceTag">MRP (inclusive of all taxes)</p>
+                <p id="bookPrice">$200</p>
+            </div>
+            <div id="highlightsContainer">
+                <p id="highlightText">Highlights</p>
+                <div id="listContainer">
+                    <ul id="list1">
+                    </ul>
+                    <ul id="list2">
+                    </ul>
+                </div>
+                <div id="buttonContainer">
+                    <button id="cartButton">add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/details.js"></script>
+</body>
+
+</html>

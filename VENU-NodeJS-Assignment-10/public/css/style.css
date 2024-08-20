@@ -1,0 +1,234 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#inputsContainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 100%;
+    height: 20vh;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#ButtonContainer{
+    text-align: center;
+    padding: 5px;
+}
+
+#addNewBook{
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    background-color: green;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+.inputField{
+    border-radius: 10px;
+    border: 1px solid rgba(137, 133, 133, 0.628);
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgba(241, 233, 233, 0.667);
+    transition: transform 0.3s ease-in;
+}
+
+.inputField:focus{
+    border: 2px solid green;
+    background: rgba(248, 247, 247, 0.87);
+    outline: none;
+    transform: scale(1.1);
+}
+
+#container2{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 5px;
+    justify-content: center; 
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%; 
+    min-width: 150px; 
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.5s ease, border 0.5s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    border: 2px solid green;
+    z-index: 1;
+    transform: scale(1.15);
+    overflow: auto;
+}
+
+.cardName{
+    font-weight: bold;
+}
+
+.starImage{
+    width: 100%;
+    height: 100%;
+}
+
+.starContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.star{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.halfStar{
+    width: 7.5px;
+    height: 15px;
+}
+
+#sessionModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+#sessionModalContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+#errorMessage{
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+#gotoLogin{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin: 20px;
+}
+#modalClose{
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: auto;
+    color: gray;
+    padding-left: 90%;
+    transition: width 0.3s ease-in ,height 0.3s ease-in;
+}
+#modalClose:hover{
+    color: black;
+    cursor: pointer;
+}
+#appTitle{
+    color: #fff;
+    text-align: center;
+    
+}
+#titleContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    padding-left: 20px;
+    background-color: green;
+    border-radius: 8px;
+}
+#titleContainer:hover{
+    cursor: pointer;
+}
+#bookIcon{
+    width: 50px;
+    height: 50px;
+}
+#actionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    padding-right: 20px;
+    background-color: green;
+    border-radius: 8px;
+    
+}
+#actionContainer:hover{
+    cursor: pointer;
+}
+#userIcon{
+    width: 40px;
+    height: 40px;
+}
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    margin: 15px;
+}
+#userName{
+    color: #fff;
+    font-size: 20px;
+}
