@@ -4,6 +4,7 @@ const path = require('path');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 const users = require(path.join(__dirname, 'public', 'schema', 'userSchema.js'));
 const Book = require(path.join(__dirname, 'public', 'schema', 'booksSchema.js'));
 const bookshelf = require(path.join(__dirname, 'public', 'schema', 'bookShelf.js'));
@@ -62,7 +63,7 @@ app.get('/admin/dashboard', (req, res) => {
 app.get('/admin/dashboard/book-:id', (req, res) => {
     res.render('details');
 });
-mongoose.connect('mongodb+srv://regulavenu985:Venu7997@booksApp.2k7tw.mongodb.net/?retryWrites=true&w=majority&appName=usersCluster')
+mongoose.connect(process.env.MONGO_DB)
     .then(() => console.log('Connected to MongoDB Atlas'))
     .catch(err => console.error('Could not connect to MongoDB Atlas:', err));
 
